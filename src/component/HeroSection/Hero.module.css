@@ -1,0 +1,64 @@
+.hero_image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?cs=srgb&dl=pexels-josh-hild-2422461.jpg&fm=jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Set a specific height */
+    height: 50vh;
+    width: 100vw;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input{
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input:focus{
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .input {
+        width: 80%
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}

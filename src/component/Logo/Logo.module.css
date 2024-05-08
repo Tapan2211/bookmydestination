@@ -1,0 +1,11 @@
+.img_style{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.img_style:hover{
+    -webkit-transform:scale(1.106);
+-moz-transform:scale(1.106);
+transform:scale(1.106);
+}

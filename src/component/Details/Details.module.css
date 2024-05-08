@@ -1,0 +1,104 @@
+.main_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.greeting {
+    width: 100%;
+    background-color: #d1e7de;
+    border-radius: 5px;
+    padding: 5px;
+    color: #0f5132;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+}
+
+.greeting span {
+    cursor: pointer;
+    font-weight: 700;
+    color: #0f5132;
+}
+
+.sub_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.left_div {
+    flex: 2;
+    border: 1px #ededed solid;
+    margin: 5px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.right_div {
+    flex: 1;
+    border: 1px #ededed solid;
+    margin: 5px;
+    text-align: justify;
+    padding: 10px;
+    height: auto;
+}
+
+.carousel_container {
+    width: 100%;
+    max-width: auto;
+    margin-bottom: 10px;
+}
+
+.horizontal_line {
+    border: 1px #ededed solid;
+    width: 100%;
+}
+
+.calculate_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.date{
+    width: 100%;
+}
+
+.form_left_div {
+    flex: 2;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.form_right_div {
+    flex: 1;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .sub_div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left_div,
+    .right_div{
+        width: 100%;
+    }
+}
